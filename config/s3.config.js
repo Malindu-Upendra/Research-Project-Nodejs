@@ -1,0 +1,5 @@
+module.exports = {
+    AWS_ACCESS_KEY_ID : "AKIARGVZWKLBUL5KGBTC",
+    AWS_SECRET_ACCESS_KEY: "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",
+    AWS_BUCKET_NAME: "spavis"
+}
