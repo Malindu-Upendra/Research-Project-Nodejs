@@ -1,6 +1,7 @@
 const upload = require('../middleware/s3.upload');
 
 const uploadfile = async (req,res) => {
+    console.log(req.body);
     upload(req,res, async function(err){
         if(err){
             return res.status(400).send({
