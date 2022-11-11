@@ -17,7 +17,7 @@ const upload = multer({
       if(file.fieldname == "singlefile"){
         console.log("console log working");
         console.log(req.body['directory']);
-        cb(null, "4Lrt2s6T9b0ltqSF0vse/" + file.originalname)
+        cb(null, req.body['directory']+"/" + file.originalname)
       }else if(file.fieldname == "multiplefile"){
         cb(null, "multiple/" + file.originalname)
       }
