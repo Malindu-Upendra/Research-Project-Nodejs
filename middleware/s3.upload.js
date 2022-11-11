@@ -15,7 +15,7 @@ const upload = multer({
     acl: 'public-read',
     key: function(req,file,cb){
       if(file.fieldname == "singlefile"){
-        cb(null, req.body['directory']+"/" + file.originalname)
+        cb(null, req.body['directory']+"/" + req.body['chapter'] + ".wav")
       }else if(file.fieldname == "multiplefile"){
         cb(null, "multiple/" + file.originalname)
       }
